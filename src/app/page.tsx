@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CalendarDays, Map, Search, ShieldCheck, Sparkles, Users } from "lucide-react";
 import { Button } from "@/components/button";
 import { ExperienceCard } from "@/components/experience-card";
@@ -11,9 +12,12 @@ export default function Home() {
       <Navbar />
       <main>
         <section className="relative min-h-[calc(100vh-4rem)] overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=85"
             alt="Safari landscape with wildlife at golden hour"
+            fill
+            priority
+            sizes="100vw"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/35 to-transparent" />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, MapPin, Star } from "lucide-react";
 import type { Experience } from "@/types";
 
@@ -9,9 +10,11 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
       className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
     >
       <div className="aspect-[4/3] overflow-hidden bg-slate-200">
-        <img
+        <Image
           src={experience.image}
           alt={experience.title}
+          width={600}
+          height={450}
           className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
         />
       </div>

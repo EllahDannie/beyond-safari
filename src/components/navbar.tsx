@@ -13,8 +13,8 @@ export function Navbar() {
           Beyond Safari
         </Link>
         <nav className="ml-6 hidden items-center gap-5 text-sm font-medium text-slate-700 md:flex">
-          <a href="/#experiences">Experiences</a>
-          <a href="/#map">Map</a>
+          <Link href="/#experiences">Experiences</Link>
+          <Link href="/#map">Map</Link>
           <Link href="/business">For hosts</Link>
           <Link href="/admin">Admin</Link>
         </nav>
