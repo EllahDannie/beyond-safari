@@ -21,7 +21,7 @@ export default function Home() {
               <p className="mb-4 inline-flex rounded-lg bg-white/15 px-3 py-1 text-sm font-semibold backdrop-blur">
                 Verified local experiences across East Africa
               </p>
-              <h1 className="text-5xl font-bold leading-tight sm:text-6xl">Beyond Safari</h1>
+              <h1 className="text-5xl font-bold leading-tight sm:text-6xl">Beyond Safari: <span className="text-shadow-amber-800">Discover Africa</span></h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-stone-100">
                 Book wildlife drives, coastal escapes, cultural walks, and host-led adventures with transparent
                 pricing and trusted local operators.
