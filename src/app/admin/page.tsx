@@ -1,5 +1,5 @@
 import { AlertTriangle, CheckCircle2, FileText, Shield, Users } from "lucide-react";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { StatCard } from "@/components/stat-card";
 import { experiences } from "@/data/mock";
@@ -7,10 +7,11 @@ import { experiences } from "@/data/mock";
 export default function AdminDashboardPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Navbar />
+      <Navbar variant="admin" />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div>
           <p className="text-sm font-semibold text-teal-700">Admin dashboard</p>
+          <h1 className="mt-1 text-3xl font-bold">Hello, Admin!</h1>
           <h1 className="mt-1 text-3xl font-bold">Platform oversight</h1>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-4">
@@ -55,7 +56,7 @@ export default function AdminDashboardPage() {
         <section className="mt-8 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-xl font-semibold">User management</h2>
           <div className="mt-4 overflow-x-auto">
-            <table className="w-full min-w-[640px] text-left text-sm">
+            <table className="w-full min-w-160 text-left text-sm">
               <thead className="border-b border-slate-200 text-slate-500">
                 <tr>
                   <th className="py-3">Name</th>

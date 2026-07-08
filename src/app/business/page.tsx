@@ -1,5 +1,5 @@
 import { BarChart3, CalendarClock, CircleDollarSign, Plus, Star } from "lucide-react";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/form-field";
 import { Navbar } from "@/components/navbar";
 import { StatCard } from "@/components/stat-card";
@@ -7,13 +7,13 @@ import { bookings, experiences } from "@/data/mock";
 
 export default function BusinessDashboardPage() {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-green-950">
       <Navbar />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-teal-700">Business dashboard</p>
-            <h1 className="mt-1 text-3xl font-bold">Host operations</h1>
+            <p className="text-sm font-semibold text-slate-300">Business dashboard</p>
+            <h1 className="mt-1 text-3xl font-bold text-teal-50">Welcome to your business dashboard</h1>
           </div>
           <Button>
             <Plus size={18} />

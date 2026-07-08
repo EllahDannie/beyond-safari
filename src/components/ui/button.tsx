@@ -9,7 +9,7 @@ type ButtonProps = {
 } & ComponentProps<"button">;
 
 const variants = {
-  primary: "bg-teal-700 text-white hover:bg-teal-800",
+  primary: "bg-[#006400] text-white hover:bg-[#005000]",
   secondary: "border border-slate-300 bg-white text-slate-950 hover:bg-slate-50",
   ghost: "text-slate-700 hover:bg-white/70",
 };

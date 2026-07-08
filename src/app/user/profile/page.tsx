@@ -1,5 +1,6 @@
 import { CalendarCheck, Heart, MessageSquare, Star, User } from "lucide-react";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/footer";
 import { ExperienceCard } from "@/components/experience-card";
 import { Navbar } from "@/components/navbar";
 import { StatCard } from "@/components/stat-card";
@@ -8,7 +9,7 @@ import { bookings, experiences } from "@/data/mock";
 export default function UserDashboardPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Navbar />
+      <Navbar profileHref="/user/profile" />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
@@ -27,7 +28,7 @@ export default function UserDashboardPage() {
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
             <h2 className="text-xl font-semibold">Bookings</h2>
             <div className="mt-4 overflow-x-auto">
-              <table className="w-full min-w-[680px] text-left text-sm">
+              <table className="w-full text-left text-sm">
                 <thead className="border-b border-slate-200 text-slate-500">
                   <tr>
                     <th className="py-3">ID</th>
@@ -62,13 +63,13 @@ export default function UserDashboardPage() {
             <h2 className="mt-4 text-xl font-semibold">Profile</h2>
             <div className="mt-4 grid gap-3 text-sm text-slate-600">
               <p>
-                <span className="font-semibold text-slate-900">Name:</span> Amina Traveler
+                <span className="font-semibold text-slate-900">Name:</span> Mika Traveler
               </p>
               <p>
-                <span className="font-semibold text-slate-900">Email:</span> amina@example.com
+                <span className="font-semibold text-slate-900">Email:</span> mika@example.com
               </p>
               <p>
-                <span className="font-semibold text-slate-900">Preference:</span> Wildlife and culture
+                <span className="font-semibold text-slate-900">Preference:</span> Food and culture
               </p>
             </div>
           </aside>
@@ -82,6 +83,7 @@ export default function UserDashboardPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

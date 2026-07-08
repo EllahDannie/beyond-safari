@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import { CalendarDays, Heart, MapPin, ShieldCheck, Star, Users } from "lucide-react";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { experiences } from "@/data/mock";
+import { CalendarDays, Heart, MapPin, ShieldCheck, Star, Users } from "lucide-react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return experiences.map((experience) => ({ id: experience.id }));
@@ -112,8 +112,8 @@ export default async function ExperienceDetailPage({ params }: { params: Promise
                 Guests
                 <input type="number" min="1" defaultValue="2" className="min-h-11 rounded-lg border border-slate-300 px-3" />
               </label>
-              <Button>Book experience</Button>
-              <Button variant="secondary">Start chat</Button>
+              <Button href="/plan">Book experience</Button>
+              <Button href="/contact" variant="secondary">Start chat</Button>
             </form>
           </aside>
         </section>

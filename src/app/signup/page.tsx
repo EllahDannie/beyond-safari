@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { UserPlus } from "lucide-react";
-import { AuthCard } from "@/components/auth-card";
-import { Button } from "@/components/button";
+import { AuthCard } from "@/components/auth/auth-card";
+import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/form-field";
 
 export default function SignupPage() {
@@ -12,7 +12,7 @@ export default function SignupPage() {
       footer={
         <>
           Already have an account?{" "}
-          <Link href="/login" className="font-semibold text-teal-700">
+          <Link href="/login" className="font-semibold text-green-700">
             Log in
           </Link>
         </>
@@ -29,7 +29,7 @@ export default function SignupPage() {
             <option>Business host</option>
           </select>
         </label>
-        <Button className="w-full">
+        <Button href="/profile" className="w-full">
           <UserPlus size={18} />
           Sign up
         </Button>
